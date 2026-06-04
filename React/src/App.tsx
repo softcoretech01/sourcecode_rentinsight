@@ -54,7 +54,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <BrowserRouter basename="/uat" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
           {/* redirect root to meetings list */}
           <Route path="/" element={<Navigate to="/master/meetings" replace />} />
